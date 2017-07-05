@@ -1,0 +1,131 @@
+/* Home Page*/
+
+
+
+body{
+	font-family:'Arial',san-serif;
+	font-size:14px;
+	color:#fff;
+	line-height:1.6em;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hujin.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hujin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+a{
+	color:#fff;
+	text-decoration:none;
+}
+
+h1{
+	text-align:center;
+	margin-bottom:20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.main{
+	width:980px;
+	margin:40px auto;
+	overflow:hidden;
+}
+
+#slider{
+	width:940px;
+	height:350px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 2px;
+	border-radius:5px;
+}
+
+#slider img{
+	width:940px;
+	height:350px;
+}
+
+.slide{
+	position:absolute;
+}
+
+.slide-copy{
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:20px;
+	background:7f7f7f;
+	background:rgba(0,0,0,0.5);
+}
+
+#prev, #next{
+	float:left;
+	margin-top:130px;
+	cursor:pointer;
+	position:relative;
+	z-index:100;
+}
+
+#prev{
+	margin-right:-45px;
+}
+
+#next{
+	margin-left:-45px;
+}
+
+.mainbtn{
+    margin: 50px 350px;
+    
+}
+/*----------------------------------------*/
+
+
+
+.usertitle{
+    text-align: center;
+}
+
+.logo{
+    height: 25px;
+    float: left;
+}
+
+.center{
+    width: 50%;
+    margin:auto;
+}
+
+.wide{
+    width: 40%;
+    margin:auto;
+}
+
+.selection{
+    width: 153%;
+}
+
+.confirm{
+    margin: 20px auto;
+    width: 50%;
+}
+
+.cancel{
+    margin: 20px auto;
+    width: 50%;
+}
+
+.date{
+    width: 123%;
+}
+
+.time{
+    width: 178%;
+}
+

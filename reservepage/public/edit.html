@@ -1,0 +1,66 @@
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Enter Your Code</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="orderId.code">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-primary" ng-click=getOrder()>Submit Your code</button>
+                <button type="submit" class="btn btn-primary" ng-click=cancelOrder()>Cancel Your Order</button>
+            </div>
+        </div>
+    </form>
+    
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">First Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="reservation.firstname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Last Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="reservation.lastname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Phone</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="reservation.phone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Date</label>
+            <div class="col-sm-9">
+                <input type="date" class="form-control" ng-model="reservation.date">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Party Size</label>
+            <div class="col-sm-9">
+                <select class="form-control" ng-model="reservation.party">
+                    <option>Less than 20</option>
+                    <option>Less than 40</option>
+                    <option>Less than 60</option>
+                    <option>Less than 80</option>
+                    <option>Less than 100</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Time</label>
+            <div class="col-sm-9">
+                <input type="time" class="form-control" ng-model="reservation.time">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-primary" ng-click="updateOrder()">Update Your Order</button>
+            </div>
+        </div>
+    </form>
+</div>

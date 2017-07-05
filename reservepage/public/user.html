@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="usertitle">
+        <h2>Book a Table</h2>
+    </div>
+    <form class="form-signin center">
+        <div class="row">
+            <div class="col-md-6">
+                <label>First Name:
+                    <input type="text" class="form-control" ng-model="firstname" placeholder="First Name" required />
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label>Last Name:
+                    <input type="text" class="form-control" ng-model="lastname" placeholder="Last Name" required />
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label>Phone:
+                    <input type="tel" class="form-control" ng-model="phone" placeholder="Phone#" required />
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label>Date:
+                    <input type="date" class="form-control date" ng-model="date" required />
+                </label>
+            </div>
+            <div class="col-md-6" >
+                <label>Party Size:
+                    <select class="form-control selection" ng-model="party">
+                        <option>Less than 20</option>
+                        <option>Less than 40</option>
+                        <option>Less than 60</option>
+                        <option>Less than 80</option>
+                        <option>Less than 100</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label>Time:
+                    <input type="time" id="myTime" class="form-control time" ng-model="time" required />
+                </label>    
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-primary btn-block confirm" ng-click="reserveOrder()" type="submit">Reserve</button>
+            </div>
+            <div class="col-md-6">
+                <a href="#!/edit"><button class="btn btn-lg btn-primary btn-block cancel" type="submit">Check/Edit</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <h3 style="text-align: center;">Your confirmation code shows here</h3>
+        </div>
+        <div style="text-align: center;">{{confirmationCode}}</div>
+    </form>
+</div>
