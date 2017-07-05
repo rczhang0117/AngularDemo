@@ -1,0 +1,35 @@
+.bold{
+    font-weight: bold;
+}
+
+body{
+    padding:5px;
+}
+
+.green{
+  color:green;
+ 
+}
+.red{
+  color:red;
+ 
+}
+.grey{
+  color:grey;
+
+}
+.blue{
+    color:#0089ff;
+
+}
+.right{
+    text-align: right;
+ 
+}
+.middle{
+    text-align: center;
+}
+.button{
+    color: #0089ff;
+    cursor: pointer;
+}

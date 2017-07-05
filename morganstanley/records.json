@@ -1,0 +1,53 @@
+[
+        {
+               "code":"IRA",
+               "number":"5200" ,
+               "availCash":"5,763.36",
+               "perChange":"-0.08" ,
+               "absoChange":"$8916.69"                   
+         },
+         {
+
+               "code":"AAA",
+               "number":"1812",
+               "availCash":"2,010,926.10",
+               "perChange":"0.21",
+               "absoChange":"$38881.63"                   
+
+          },
+          {
+
+               "code":"AAA",
+               "number":"3810",
+               "availCash":"10,050,054.07",
+               "perChange":"0.07",
+               "absoChange":"$8916.69"                   
+
+          },
+          {
+
+               "code":"REG",
+               "number":"2019",
+               "availCash":"13,465,679.34",
+               "perChange":"0.00",
+               "absoChange":"$0.00"                   
+
+          },
+          {
+
+               "code":"IRA",
+               "number":"0146",
+               "availCash":"15,884,302.39",
+               "perChange":"0.03",
+               "absoChange":"$7430.83"                   
+
+           },
+           {
+
+               "code":"AAA",
+               "number":"0029",
+               "availCash":"39,160,334.42",
+               "perChange":"-0.07",
+               "absoChange":"$31435.87"                   
+           }
+]

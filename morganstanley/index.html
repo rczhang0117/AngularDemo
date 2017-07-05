@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercise</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body style="background-color:#0089ff;">
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <div class="container" style="background-color:white;">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th ng-click="Sort('number')">Account<span ng-hide="hideAll"><span class="dropup"><span class="caret" ng-show="flag"></span></span><span class="dropdown"><span class="caret" ng-hide="flag"></span></span></span></th>
+                        <th class="right">
+                          <span ng-click="Sort('availCash')">Available Cash</span> <br>
+                          <span class="grey bold">Today's Change</span>
+                        </th>      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="data in datas | orderBy: keyProp: reverse | limitTo:totalDisplayed">
+                        <td class="blue bold">{{data.code}} - {{data.number}}</td>
+                        <td class="right bold">${{data.availCash}} <br>
+                          <span ng-class="{green:data.perChange>0, red:data.perChange<0, grey:data.perChange===0}">{{data.perChange}} / {{data.absoChange}} </span> 
+                        </td>
+                      </tr>
+
+                    </tbody>
+                    <tbody class="middle bold">
+                      <tr>
+                        <td colspan="2" class="button" ng-click="loadMore()" ng-hide="totalDisplayed === datas.length">Load More</td>
+                      </tr>
+                    </tbody>
+
+
+
+                  </table>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
