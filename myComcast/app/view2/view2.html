@@ -1,0 +1,18 @@
+<div ng-app="myApp" ng-controller="View2Ctrl">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>C1</th>
+                <th>C2</th>
+                <th>C3</th>
+            </tr>
+            <tr ng-repeat="item in groupByName |orderBy">
+                <th>{{item[0]}}</th>
+                <th>{{item[1].C1 || "-"}}</th>
+                <th>{{item[1].C2 || "-"}}</th>
+                <th>{{item[1].C3 || "-"}}</th>
+            </tr>
+        </thead>
+    </table>
+</div>
